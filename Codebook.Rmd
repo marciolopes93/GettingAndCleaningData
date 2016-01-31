@@ -1,0 +1,108 @@
+---
+title: "Getting and Cleaning Data: Codebook"
+author: "Marcio Lopes"
+date: "31 January 2016"
+output: html_document
+---
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz.
+
+`tidy.txt` contains the average of each _variable_ for each _activity_ and each _subject_. The dimensions are 180 rows by 81 columns. The rows comprise all 30 conbinations of subjects crossed with 6 combinations of activities while the columns comprise 81 features.
+
+# Variables
+Variables are unaltered and as per the original data. Only variables containing mean or standard deviation information are kept.
+In `tidy.txt`, the average of each variable for each activity and for each subject is given. Since the features were unedited, apart from taking a simple mean across each subject and eacg activity, it is highly recommended that this codebook be read in conjunction with the original codebook supplied with the dataset. The features retained are as follows:
+
+* `timeBodyAcc-mean()-X`                   
+* `timeBodyAcc-mean()-Y`                   
+* `timeBodyAcc-mean()-Z`                   
+* `timeBodyAcc-StDev()-X`                  
+* `timeBodyAcc-StDev()-Y`                  
+* `timeBodyAcc-StDev()-Z`                  
+* `timeGravityAcc-mean()-X`                
+* `timeGravityAcc-mean()-Y`                
+* `timeGravityAcc-mean()-Z`                
+* `timeGravityAcc-StDev()-X`               
+* `timeGravityAcc-StDev()-Y`               
+* `timeGravityAcc-StDev()-Z`               
+* `timeBodyAccJerk-mean()-X`               
+* `timeBodyAccJerk-mean()-Y`               
+* `timeBodyAccJerk-mean()-Z`               
+* `timeBodyAccJerk-StDev()-X`              
+* `timeBodyAccJerk-StDev()-Y`              
+* `timeBodyAccJerk-StDev()-Z`              
+* `timeBodyGyro-mean()-X`                  
+* `timeBodyGyro-mean()-Y`                  
+* `timeBodyGyro-mean()-Z`                  
+* `timeBodyGyro-StDev()-X`                 
+* `timeBodyGyro-StDev()-Y`                 
+* `timeBodyGyro-StDev()-Z`                 
+* `timeBodyGyroJerk-mean()-X`              
+* `timeBodyGyroJerk-mean()-Y`              
+* `timeBodyGyroJerk-mean()-Z`              
+* `timeBodyGyroJerk-StDev()-X`             
+* `timeBodyGyroJerk-StDev()-Y`             
+* `timeBodyGyroJerk-StDev()-Z`             
+* `timeBodyAccMag-mean()`                  
+* `timeBodyAccMag-StDev()`                 
+* `timeGravityAccMag-mean()`               
+* `timeGravityAccMag-StDev()`              
+* `timeBodyAccJerkMag-mean()`              
+* `timeBodyAccJerkMag-StDev()`             
+* `timeBodyGyroMag-mean()`                 
+* `timeBodyGyroMag-StDev()`                
+* `timeBodyGyroJerkMag-mean()`             
+* `timeBodyGyroJerkMag-StDev()`            
+* `frequencyBodyAcc-mean()-X`              
+* `frequencyBodyAcc-mean()-Y`              
+* `frequencyBodyAcc-mean()-Z`              
+* `frequencyBodyAcc-StDev()-X`             
+* `frequencyBodyAcc-StDev()-Y`             
+* `frequencyBodyAcc-StDev()-Z`             
+* `frequencyBodyAcc-meanFreq()-X`          
+* `frequencyBodyAcc-meanFreq()-Y`          
+* `frequencyBodyAcc-meanFreq()-Z`          
+* `frequencyBodyAccJerk-mean()-X`          
+* `frequencyBodyAccJerk-mean()-Y`          
+* `frequencyBodyAccJerk-mean()-Z`          
+* `frequencyBodyAccJerk-StDev()-X`         
+* `frequencyBodyAccJerk-StDev()-Y`         
+* `frequencyBodyAccJerk-StDev()-Z`         
+* `frequencyBodyAccJerk-meanFreq()-X`      
+* `frequencyBodyAccJerk-meanFreq()-Y`      
+* `frequencyBodyAccJerk-meanFreq()-Z`      
+* `frequencyBodyGyro-mean()-X`             
+* `frequencyBodyGyro-mean()-Y`             
+* `frequencyBodyGyro-mean()-Z`             
+* `frequencyBodyGyro-StDev()-X`            
+* `frequencyBodyGyro-StDev()-Y`            
+* `frequencyBodyGyro-StDev()-Z`            
+* `frequencyBodyGyro-meanFreq()-X`         
+* `frequencyBodyGyro-meanFreq()-Y`         
+* `frequencyBodyGyro-meanFreq()-Z`         
+* `frequencyBodyAccMag-mean()`             
+* `frequencyBodyAccMag-StDev()`            
+* `frequencyBodyAccMag-meanFreq()`         
+* `frequencyBodyBodyAccJerkMag-mean()`     
+* `frequencyBodyBodyAccJerkMag-StDev()`    
+* `frequencyBodyBodyAccJerkMag-meanFreq()` 
+* `frequencyBodyBodyGyroMag-mean()`        
+* `frequencyBodyBodyGyroMag-StDev()`       
+* `frequencyBodyBodyGyroMag-meanFreq()`    
+* `frequencyBodyBodyGyroJerkMag-mean()`    
+* `frequencyBodyBodyGyroJerkMag-StDev()`   
+* `frequencyBodyBodyGyroJerkMag-meanFreq()`
+
+# Activities
+The activities (and their corresponding label) are as follows:
+
+1. WALKING
+2. WALKING_UPSTAIRS
+3. WALKING_DOWNSTAIRS
+4. SITTING
+5. STANDING
+6. LAYING
+
+This is the type of activity performed when the corresponding measurements (variables) were recorded.
+
+# Subject
+Since there were 30 volunteers, `Subject` is an integer from 1-30. This is the subject ID.
