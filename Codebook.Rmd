@@ -10,7 +10,7 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 # Variables
 Variables are unaltered and as per the original data. Only variables containing mean or standard deviation information are kept.
-In `tidy.txt`, the average of each variable for each activity and for each subject is given. Since the features were unedited, apart from taking a simple mean across each subject and eacg activity, it is highly recommended that this codebook be read in conjunction with the original codebook supplied with the dataset. The features retained are as follows:
+In `tidy.txt`, the average of each variable for each activity and for each subject is given. Since the features were unedited, apart from taking a simple mean across each subject and eacg activity, it is highly recommended that this codebook be read in conjunction with the original codebook supplied with the dataset. This can be found [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). The features retained are as follows:
 
 * `timeBodyAcc-mean()-X`                   
 * `timeBodyAcc-mean()-Y`                   
